@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-de-fundo: #AA91E6;
-    --Azul: #0f134f;
+    --cor-de-fundo: #ee49ca;
+    --verde: #cb2491;
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(55, 53, 81, 0.3);
+    --botao-ativo: #e357d5;
+    --botao-inativo: rgba(220, 24, 122, 0.5);
+    --texto-fundo: rgba(220, 218, 232, 0.3);
 }
 
 body {
@@ -36,8 +36,9 @@ body {
     color: var(--verde);
 }
 
+
 .botao {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -60,52 +61,13 @@ body {
     display: block;
 }
 
-.contador {
-    font-size: 20px;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.contador-digito {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-digito-numero {
-    font-size: 80px;
-    margin: 0;
-}
-
-.contador-digito-texto {
-    color: chartreuse;
-    font-size: 20px;
-    margin: 0;
-  }
-
-
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
-    }
-}
-
 .botao.ativo {
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid rgb(36, 5, 36);
-    font-weight: bold;
+    border-bottom: 4px solid var(--verde);
 }
 
-.aba-textos {
-    background-color: #25295f;
+.abas-textos {
+    background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -125,6 +87,45 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
-    color: chartreuse;
+    color: var(--verde);
     text-transform: uppercase;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito {
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero {
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto {
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
